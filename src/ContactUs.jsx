@@ -15,7 +15,7 @@ export default function ContactUs() {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-        // Prevent body scroll when menu is open
+
         if (!isMenuOpen) {
             document.body.classList.add('menu-open');
         } else {
