@@ -373,24 +373,14 @@ body.menu-open {
   background-color: #f4a600;
 }
 
-.location-icon::before {
-  content: '📍';
-}
 
 .email-icon {
   background-color: #f4a600;
 }
 
-.email-icon::before {
-  content: '✉️';
-}
 
 .phone-icon {
   background-color: #f4a600;
-}
-
-.phone-icon::before {
-  content: '📞';
 }
 
 .info-content h3 {
