@@ -378,6 +378,14 @@ body {
   color: #7eb5d6;
 }
 
+/* Ensure awards image fits inside the circular badge nicely */
+.badge-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  display: block;
+}
+
 .badge-text {
   display: flex;
   flex-direction: column;

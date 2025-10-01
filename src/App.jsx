@@ -172,17 +172,7 @@ export default function RealtyLandingPage() {
       <section className="achievements-section">
         <h2>Our Achievements</h2>
         <div className="achievements-grid">
-          {achievements.map((achievement) => (
-            <div key={achievement.id} className="achievement-badge">
-              <div className="badge-icon">
-                <div className="badge-star">★</div>
-              </div>
-              <div className="badge-text">
-                <span className="badge-name">REIWA.COM</span>
-                <span className="badge-year">{achievement.year}</span>
-              </div>
-            </div>
-          ))}
+          <img src="/awrads-Photoroom 1.png" className="badge-image" />
         </div>
       </section>
 
