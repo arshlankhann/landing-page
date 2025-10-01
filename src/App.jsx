@@ -4,6 +4,11 @@ import './App.css';
 
 export default function RealtyLandingPage() {
   const [email, setEmail] = useState('');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const propertyImages = [
     { id: 1, src: '/1.png', alt: 'Modern brick house with driveway' },
@@ -66,6 +71,27 @@ export default function RealtyLandingPage() {
             </a>
           </div>
         </nav>
+
+        <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
+          <a href="#home" onClick={toggleMenu}>Home</a>
+          <a href="#about" onClick={toggleMenu}>About Us</a>
+          <a href="#testimonial" onClick={toggleMenu}>Testimonial</a>
+          <Link to="/contact" onClick={toggleMenu}>Contact US</Link>
+          <div className="social-icons">
+            <a href="#" className="social-icon instagram">
+              <img src="/instagram.png" alt="Instagram" />
+            </a>
+            <a href="#" className="social-icon facebook">
+              <img src="/facebook.png" alt="Facebook" />
+            </a>
+          </div>
+        </div>
       </header>
 
       <section className="hero">
